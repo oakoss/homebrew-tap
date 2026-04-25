@@ -1,32 +1,31 @@
 class Linesmith < Formula
   desc "A Rust status line for Claude Code and other AI coding CLIs"
   homepage "https://github.com/oakoss/linesmith"
-  version "0.1.0"
+  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/oakoss/linesmith/releases/download/v0.1.0/linesmith-aarch64-apple-darwin.tar.xz"
-      sha256 "606d52e4820ca808572b05ca0814cc4d3a23eb5eeb5ea2b31ded6d1d5300e9a1"
+      url "https://github.com/oakoss/linesmith/releases/download/v0.1.1/linesmith-aarch64-apple-darwin.tar.xz"
+      sha256 "d8f8bd86809664ca7b0dd8fdb846eb331b81b38ae2942937a0371331e6fa1b59"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/oakoss/linesmith/releases/download/v0.1.0/linesmith-x86_64-apple-darwin.tar.xz"
-      sha256 "2db17d1568f6b447b25c55988179b724cbce87ded91f3f13797400a5945bab74"
+      url "https://github.com/oakoss/linesmith/releases/download/v0.1.1/linesmith-x86_64-apple-darwin.tar.xz"
+      sha256 "128f823b891e64cd3607844c8af6fbf85984994df20ef411e02d70bd538295f2"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/oakoss/linesmith/releases/download/v0.1.0/linesmith-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "b37e16ab05b3817904b2de7ac9d4616ef47cfa43d096ba82992f6e7144a4b987"
+      url "https://github.com/oakoss/linesmith/releases/download/v0.1.1/linesmith-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "5d71d7ae3864f8c08bd7887bc1e5bdc6c89d03c607ae9c7cb8e2881ef099a775"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/oakoss/linesmith/releases/download/v0.1.0/linesmith-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "23c58048d23e7049d88a5b46256e1c227619ed3bb4f7286ac4a19a1dc96ca889"
+      url "https://github.com/oakoss/linesmith/releases/download/v0.1.1/linesmith-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "53218ad08b7a08e5d53de153ad9bca6bae2772b571b2c73d0555915ee5d2fd8b"
     end
   end
   license "MIT"
 
   BINARY_ALIASES = {
     "aarch64-apple-darwin":              {},
-    "aarch64-pc-windows-gnu":            {},
     "aarch64-unknown-linux-gnu":         {},
     "x86_64-apple-darwin":               {},
     "x86_64-pc-windows-gnu":             {},
