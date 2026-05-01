@@ -1,25 +1,25 @@
 class Linesmith < Formula
   desc "A Rust status line for Claude Code and other AI coding CLIs"
   homepage "https://github.com/oakoss/linesmith"
-  version "0.1.1"
+  version "0.1.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/oakoss/linesmith/releases/download/v0.1.1/linesmith-aarch64-apple-darwin.tar.xz"
-      sha256 "d8f8bd86809664ca7b0dd8fdb846eb331b81b38ae2942937a0371331e6fa1b59"
+      url "https://github.com/oakoss/linesmith/releases/download/linesmith-v0.1.2/linesmith-aarch64-apple-darwin.tar.xz"
+      sha256 "0ab66964a4224d4e9b7e4b120b514e7bcba2b52666409620ac79c989421bb169"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/oakoss/linesmith/releases/download/v0.1.1/linesmith-x86_64-apple-darwin.tar.xz"
-      sha256 "128f823b891e64cd3607844c8af6fbf85984994df20ef411e02d70bd538295f2"
+      url "https://github.com/oakoss/linesmith/releases/download/linesmith-v0.1.2/linesmith-x86_64-apple-darwin.tar.xz"
+      sha256 "64d15d131b7e8765d58fdceb2884b899aea925da565309ca03660f483a5a26b9"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/oakoss/linesmith/releases/download/v0.1.1/linesmith-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "5d71d7ae3864f8c08bd7887bc1e5bdc6c89d03c607ae9c7cb8e2881ef099a775"
+      url "https://github.com/oakoss/linesmith/releases/download/linesmith-v0.1.2/linesmith-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "66122635796aaa56da0c56a9b2c138d7067d4de4f8d43b8ca41071938a177ccf"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/oakoss/linesmith/releases/download/v0.1.1/linesmith-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "53218ad08b7a08e5d53de153ad9bca6bae2772b571b2c73d0555915ee5d2fd8b"
+      url "https://github.com/oakoss/linesmith/releases/download/linesmith-v0.1.2/linesmith-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "824e8dd7bff5a595b2bcc60b041008ade4c5d03489b581752e31da459e325a3c"
     end
   end
   license "MIT"
@@ -50,10 +50,10 @@ class Linesmith < Formula
   end
 
   def install
-    bin.install "linesmith" if OS.mac? && Hardware::CPU.arm?
-    bin.install "linesmith" if OS.mac? && Hardware::CPU.intel?
-    bin.install "linesmith" if OS.linux? && Hardware::CPU.arm?
-    bin.install "linesmith" if OS.linux? && Hardware::CPU.intel?
+    bin.install "gen-config-schema", "linesmith" if OS.mac? && Hardware::CPU.arm?
+    bin.install "gen-config-schema", "linesmith" if OS.mac? && Hardware::CPU.intel?
+    bin.install "gen-config-schema", "linesmith" if OS.linux? && Hardware::CPU.arm?
+    bin.install "gen-config-schema", "linesmith" if OS.linux? && Hardware::CPU.intel?
 
     install_binary_aliases!
 
