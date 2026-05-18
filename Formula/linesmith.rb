@@ -1,25 +1,25 @@
 class Linesmith < Formula
   desc "A Rust status line for Claude Code and other AI coding CLIs"
   homepage "https://github.com/oakoss/linesmith"
-  version "0.1.2"
+  version "0.1.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/oakoss/linesmith/releases/download/linesmith-v0.1.2/linesmith-aarch64-apple-darwin.tar.xz"
-      sha256 "0ab66964a4224d4e9b7e4b120b514e7bcba2b52666409620ac79c989421bb169"
+      url "https://github.com/oakoss/linesmith/releases/download/linesmith-v0.1.3/linesmith-aarch64-apple-darwin.tar.xz"
+      sha256 "4ce42644fe195fdb4315fd4ce5353fe322d90cdc129f6275340703a9c725a1fc"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/oakoss/linesmith/releases/download/linesmith-v0.1.2/linesmith-x86_64-apple-darwin.tar.xz"
-      sha256 "64d15d131b7e8765d58fdceb2884b899aea925da565309ca03660f483a5a26b9"
+      url "https://github.com/oakoss/linesmith/releases/download/linesmith-v0.1.3/linesmith-x86_64-apple-darwin.tar.xz"
+      sha256 "94abd079073347152eb46f018910dfcf2816ac4500fd4533a4cfad810efc842c"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/oakoss/linesmith/releases/download/linesmith-v0.1.2/linesmith-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "66122635796aaa56da0c56a9b2c138d7067d4de4f8d43b8ca41071938a177ccf"
+      url "https://github.com/oakoss/linesmith/releases/download/linesmith-v0.1.3/linesmith-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "a4b66cf3248bb11299c8c411ecdfb734443ddcb8d947e5ae5f5d2694ae8e6f28"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/oakoss/linesmith/releases/download/linesmith-v0.1.2/linesmith-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "824e8dd7bff5a595b2bcc60b041008ade4c5d03489b581752e31da459e325a3c"
+      url "https://github.com/oakoss/linesmith/releases/download/linesmith-v0.1.3/linesmith-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "e6d5e7d9a67f4278ecf71ba615a19a9c94ea6f64739e9d1eee85ec4ea23aadb2"
     end
   end
   license "MIT"
