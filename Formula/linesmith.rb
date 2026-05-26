@@ -1,25 +1,25 @@
 class Linesmith < Formula
   desc "A Rust status line for Claude Code and other AI coding CLIs"
   homepage "https://github.com/oakoss/linesmith"
-  version "0.2.0"
+  version "0.2.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/oakoss/linesmith/releases/download/v0.2.0/linesmith-aarch64-apple-darwin.tar.xz"
-      sha256 "c56615beba74620d6b2d4b98a32add6ecb374705e246b82a73268111cb3e6e0d"
+      url "https://github.com/oakoss/linesmith/releases/download/linesmith/v0.2.1/linesmith-aarch64-apple-darwin.tar.xz"
+      sha256 "1fa647988dc4bb88d95b2476284d45bc4021cecb6a2001bbd38dc46061b1ec0b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/oakoss/linesmith/releases/download/v0.2.0/linesmith-x86_64-apple-darwin.tar.xz"
-      sha256 "0755b09e9a0f3971781671b7f4a7c39bf52b7edc8b6cf56ff7f99d87c09190ab"
+      url "https://github.com/oakoss/linesmith/releases/download/linesmith/v0.2.1/linesmith-x86_64-apple-darwin.tar.xz"
+      sha256 "475ab4d3ef39645c4ace0e1004025b47bdbb3ebff7759411dd83280229a92387"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/oakoss/linesmith/releases/download/v0.2.0/linesmith-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "f8d101680fadeaffcf528e45dde992ee2e58b98cef4be9eca38e13d6f9d347d6"
+      url "https://github.com/oakoss/linesmith/releases/download/linesmith/v0.2.1/linesmith-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "13c19fce70b19412b4b8343cc9b00189cc509ee0413b4a43a61eee12147c5761"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/oakoss/linesmith/releases/download/v0.2.0/linesmith-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "716b1e8f81f393e3cb78d73a4905f982a6004dabc793b64c44d1bcf9f57c570f"
+      url "https://github.com/oakoss/linesmith/releases/download/linesmith/v0.2.1/linesmith-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "ee1b8da8d98b1e470fa99dd1b824cf19e3d2a5c67e3f286b337bb1465315aeb5"
     end
   end
   license "MIT"
