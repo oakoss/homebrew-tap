@@ -1,25 +1,25 @@
 class Tm < Formula
   desc "A local-first issue tracker for one human and their AI agents"
   homepage "https://github.com/oakoss/tm"
-  version "0.3.0"
+  version "0.4.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/oakoss/tm/releases/download/v0.3.0/tm-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "9be4ee79244595e95326b960b891ca7fddfaf5f4451b3d723594ad8f2e8a6462"
+      url "https://github.com/oakoss/tm/releases/download/v0.4.1/tm-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "e8a11142fa7703ba3f17a2925195c09105fb3e258983b3b429c1d96d48b3fe45"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/oakoss/tm/releases/download/v0.3.0/tm-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "0eea1c58e9816d452810e39cc34bc4cc8059c6ed6a5f9312bab35f22797acadf"
+      url "https://github.com/oakoss/tm/releases/download/v0.4.1/tm-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "0302f2501e527bd3da09eb5e65b8b6e2217a1cfcb007760227689c07407d907b"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/oakoss/tm/releases/download/v0.3.0/tm-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "8d632f71a28a54cf5e906489ff4fba63bb9a8afc81ca618e1e0cfb7d2006e1f0"
+      url "https://github.com/oakoss/tm/releases/download/v0.4.1/tm-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "f4888fe9420bf3ea736905e30ee2bf5b2830f0310cd82aa2eb7c80a1e034ec48"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/oakoss/tm/releases/download/v0.3.0/tm-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "61d3a997a639c5d169864aa8b48373722c650763f65379e774cb4898c30a2850"
+      url "https://github.com/oakoss/tm/releases/download/v0.4.1/tm-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "1462703375c0eafe4e694605b7b36430440eca7d629087089b721ce2a612b1b1"
     end
   end
   license "MIT"
