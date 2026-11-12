@@ -1,25 +1,25 @@
 class Oakum < Formula
   desc "A polyglot release tool that derives dependent version bumps from the dependency graph"
   homepage "https://github.com/oakoss/oakum"
-  version "0.10.0"
+  version "0.10.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/oakoss/oakum/releases/download/v0.10.0/oakum-aarch64-apple-darwin.tar.xz"
-      sha256 "f38c0dd6d5c0692f0e7cf6ead329c6b149c92be02b9ee7d49eaeb849ed46eca1"
+      url "https://github.com/oakoss/oakum/releases/download/v0.10.1/oakum-aarch64-apple-darwin.tar.xz"
+      sha256 "8935005ad6f1a3ea3bc7e0cdd5be53b990971f2c936864cb8f27a88ae28be3d0"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/oakoss/oakum/releases/download/v0.10.0/oakum-x86_64-apple-darwin.tar.xz"
-      sha256 "b840718a8713d7d7b739dd2c47ebb059c2cbc319c169abf23611f5187f88ea0b"
+      url "https://github.com/oakoss/oakum/releases/download/v0.10.1/oakum-x86_64-apple-darwin.tar.xz"
+      sha256 "71ec64b595152fb54693b07d58e62362f0674762ad0065f6d3b60b3fa6b28615"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/oakoss/oakum/releases/download/v0.10.0/oakum-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "d4ec39d10ad5d4539090ffe9e75015ce5c5e60ce459ec00f7f220d42fed55ff0"
+      url "https://github.com/oakoss/oakum/releases/download/v0.10.1/oakum-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "b9e46c9b4c5e9e52ddf10e3c9bd4f5b1fb744966788f97752ee78794057b8305"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/oakoss/oakum/releases/download/v0.10.0/oakum-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "671b2292b9ee3dbe5c2fcf75d4cacd7c5f93ee6da8b5cd7669af43ba9baf0dce"
+      url "https://github.com/oakoss/oakum/releases/download/v0.10.1/oakum-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "cb1aa3f9b22d7a4f602a271720380443a7947eb3eb04367bebc5a081b0243ed2"
     end
   end
   license "MIT"
